@@ -3,7 +3,7 @@
 
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -19,23 +19,23 @@
         <meta name="author" content="Nebula Graph">
       
       
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+        <meta name="lang:clipboard.copy" content="复制">
       
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+        <meta name="lang:clipboard.copied" content="已复制">
       
-        <meta name="lang:search.language" content="en">
+        <meta name="lang:search.language" content="ja">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
         <meta name="lang:search.pipeline.trimmer" content="True">
       
-        <meta name="lang:search.result.none" content="No matching documents">
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
       
-        <meta name="lang:search.result.one" content="1 matching document">
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
       
-        <meta name="lang:search.result.other" content="# matching documents">
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
       
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
@@ -96,7 +96,7 @@
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
       <a href="#match" tabindex="0" class="md-skip">
-        Skip to content
+        跳转至
       </a>
     
     
@@ -135,7 +135,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -145,7 +145,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="result">
           <div class="md-search-result__meta">
-            Type to start searching
+            键入以开始搜索
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -163,7 +163,7 @@
 
   
 
-<a href="https://github.com/vesoft-inc/nebula" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/vesoft-inc/nebula" title="前往 Github 仓库" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -210,7 +210,7 @@
 
   
 
-<a href="https://github.com/vesoft-inc/nebula" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/vesoft-inc/nebula" title="前往 Github 仓库" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1041,118 +1041,132 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#syntax" class="md-nav__link">
-    Syntax
+  <a href="#_1" class="md-nav__link">
+    语法
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the_workflow_of_match" class="md-nav__link">
-    The workflow of MATCH
+  <a href="#match_1" class="md-nav__link">
+    MATCH工作流程
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use_patterns_in_match_statements" class="md-nav__link">
-    Use patterns in MATCH statements
+  <a href="#opencypher" class="md-nav__link">
+    openCypher兼容性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    使用模式（pattern）
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#match_a_vertex" class="md-nav__link">
-    Match a vertex
+  <a href="#_2" class="md-nav__link">
+    前提条件
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_tag" class="md-nav__link">
-    Match on tag
+  <a href="#_3" class="md-nav__link">
+    匹配点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_vertex_property" class="md-nav__link">
-    Match on vertex property
+  <a href="#_4" class="md-nav__link">
+    匹配标签
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_vid" class="md-nav__link">
-    Match on VID
+  <a href="#_5" class="md-nav__link">
+    匹配点的属性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_connected_vertices" class="md-nav__link">
-    Match connected vertices
+  <a href="#id" class="md-nav__link">
+    匹配点ID
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_paths" class="md-nav__link">
-    Match paths
+  <a href="#_6" class="md-nav__link">
+    匹配连接的点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_edges" class="md-nav__link">
-    Match edges
+  <a href="#_7" class="md-nav__link">
+    匹配路径
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_edge_types_and_properties" class="md-nav__link">
-    Match on edge types and properties
+  <a href="#_8" class="md-nav__link">
+    匹配边
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_multiple_edge_types" class="md-nav__link">
-    Match on multiple edge types
+  <a href="#_9" class="md-nav__link">
+    匹配边类型和属性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_multiple_edges" class="md-nav__link">
-    Match multiple edges
+  <a href="#_10" class="md-nav__link">
+    匹配多个边类型
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_fixed-length_paths" class="md-nav__link">
-    Match fixed-length paths
+  <a href="#_11" class="md-nav__link">
+    匹配多条边
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_variable-length_paths" class="md-nav__link">
-    Match variable-length paths
+  <a href="#_12" class="md-nav__link">
+    匹配定长路径
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_variable-length_paths_with_multiple_edge_types" class="md-nav__link">
-    Match variable-length paths with multiple edge types
+  <a href="#_13" class="md-nav__link">
+    匹配变长路径
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    匹配多个边类型的变长路径
   </a>
   
 </li>
@@ -1163,79 +1177,79 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common_retrieving_operations" class="md-nav__link">
-    Common retrieving operations
+  <a href="#_15" class="md-nav__link">
+    常用检索操作
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#retrieve_vertex_or_edge_information" class="md-nav__link">
-    Retrieve vertex or edge information
+  <a href="#_16" class="md-nav__link">
+    检索点或边的信息
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_vids" class="md-nav__link">
-    Retrieve VIDs
+  <a href="#id_1" class="md-nav__link">
+    检索点ID
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_tags" class="md-nav__link">
-    Retrieve tags
+  <a href="#_17" class="md-nav__link">
+    检索标签
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_a_single_property_on_a_vertex_or_an_edge" class="md-nav__link">
-    Retrieve a single property on a vertex or an edge
+  <a href="#_18" class="md-nav__link">
+    检索点或边的单个属性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_all_properties_on_a_vertex_or_an_edge" class="md-nav__link">
-    Retrieve all properties on a vertex or an edge
+  <a href="#_19" class="md-nav__link">
+    检索点或边的所有属性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_edge_types" class="md-nav__link">
-    Retrieve edge types
+  <a href="#_20" class="md-nav__link">
+    检索边类型
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_paths" class="md-nav__link">
-    Retrieve paths
+  <a href="#_21" class="md-nav__link">
+    检索路径
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_vertices_in_a_path" class="md-nav__link">
-    Retrieve vertices in a path
+  <a href="#_22" class="md-nav__link">
+    检索路径中的点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_edges_in_a_path" class="md-nav__link">
-    Retrieve edges in a path
+  <a href="#_23" class="md-nav__link">
+    检索路径中的边
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_path_length" class="md-nav__link">
-    Retrieve path length
+  <a href="#_24" class="md-nav__link">
+    检索路径长度
   </a>
   
 </li>
@@ -1802,7 +1816,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11.edge-type-statements/2.drop-edge/" title="DROP EDGE" class="md-nav__link">
+    <a href="../../11.edge-type-statements/2.drop-edge.md" title="DROP EDGE" class="md-nav__link">
       DROP EDGE
     </a>
   </li>
@@ -1814,7 +1828,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11.edge-type-statements/3.alter-edge/" title="ALTER EDGE" class="md-nav__link">
+    <a href="../../11.edge-type-statements/3.alter-edge.md" title="ALTER EDGE" class="md-nav__link">
       ALTER EDGE
     </a>
   </li>
@@ -1826,7 +1840,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11.edge-type-statements/4.show-edges/" title="SHOW EDGES" class="md-nav__link">
+    <a href="../../11.edge-type-statements/4.show-edges.md" title="SHOW EDGES" class="md-nav__link">
       SHOW EDGES
     </a>
   </li>
@@ -1838,7 +1852,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11.edge-type-statements/5.describe-edge/" title="DESCRIBE EDGE" class="md-nav__link">
+    <a href="../../11.edge-type-statements/5.describe-edge.md" title="DESCRIBE EDGE" class="md-nav__link">
       DESCRIBE EDGE
     </a>
   </li>
@@ -1886,7 +1900,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12.vertex-statements/4.delete-vertex/" title="DELETE VERTEX" class="md-nav__link">
+    <a href="../../12.vertex-statements/4.delete-vertex.md" title="DELETE VERTEX" class="md-nav__link">
       DELETE VERTEX
     </a>
   </li>
@@ -1898,7 +1912,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12.vertex-statements/2.update-vertex/" title="UPDATE VERTEX" class="md-nav__link">
+    <a href="../../12.vertex-statements/2.update-vertex.md" title="UPDATE VERTEX" class="md-nav__link">
       UPDATE VERTEX
     </a>
   </li>
@@ -1910,7 +1924,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12.vertex-statements/3.upsert-vertex/" title="UPSERT VERTEX" class="md-nav__link">
+    <a href="../../12.vertex-statements/3.upsert-vertex.md" title="UPSERT VERTEX" class="md-nav__link">
       UPSERT VERTEX
     </a>
   </li>
@@ -1922,7 +1936,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12.vertex-statements/5.fetch-vertex/" title="FETCH VERTEX" class="md-nav__link">
+    <a href="../../12.vertex-statements/5.fetch-vertex.md" title="FETCH VERTEX" class="md-nav__link">
       FETCH VERTEX
     </a>
   </li>
@@ -1958,7 +1972,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/1.insert-edge/" title="INSERT EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/1.insert-edge.md" title="INSERT EDGE" class="md-nav__link">
       INSERT EDGE
     </a>
   </li>
@@ -1970,7 +1984,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/4.delete-edge/" title="DELETE EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/4.delete-edge.md" title="DELETE EDGE" class="md-nav__link">
       DELETE EDGE
     </a>
   </li>
@@ -1982,7 +1996,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/2.update-edge/" title="UPDATE EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/2.update-edge.md" title="UPDATE EDGE" class="md-nav__link">
       UPDATE EDGE
     </a>
   </li>
@@ -1994,7 +2008,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/3.upsert-edge/" title="UPSERT EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/3.upsert-edge.md" title="UPSERT EDGE" class="md-nav__link">
       UPSERT EDGE
     </a>
   </li>
@@ -2006,7 +2020,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/5.fetch-edge/" title="FETCH EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/5.fetch-edge.md" title="FETCH EDGE" class="md-nav__link">
       FETCH EDGE
     </a>
   </li>
@@ -2042,7 +2056,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/" title="Index overview" class="md-nav__link">
+    <a href="../../14.native-index-statements/README.md" title="Index overview" class="md-nav__link">
       Index overview
     </a>
   </li>
@@ -2054,7 +2068,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/1.create-native-index/" title="CREATE INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/1.create-native-index.md" title="CREATE INDEX" class="md-nav__link">
       CREATE INDEX
     </a>
   </li>
@@ -2066,7 +2080,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/2.show-native-indexes/" title="SHOW INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/2.show-native-indexes.md" title="SHOW INDEX" class="md-nav__link">
       SHOW INDEX
     </a>
   </li>
@@ -2090,7 +2104,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/3.describe-native-index/" title="DESCRIBE INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/3.describe-native-index.md" title="DESCRIBE INDEX" class="md-nav__link">
       DESCRIBE INDEX
     </a>
   </li>
@@ -2102,7 +2116,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/4.rebuild-native-index/" title="REBUILD INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/4.rebuild-native-index.md" title="REBUILD INDEX" class="md-nav__link">
       REBUILD INDEX
     </a>
   </li>
@@ -2114,7 +2128,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/5.show-native-index-status/" title="SHOW INDEX STATUS" class="md-nav__link">
+    <a href="../../14.native-index-statements/5.show-native-index-status.md" title="SHOW INDEX STATUS" class="md-nav__link">
       SHOW INDEX STATUS
     </a>
   </li>
@@ -2126,7 +2140,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/6.drop-native-index/" title="DROP INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/6.drop-native-index.md" title="DROP INDEX" class="md-nav__link">
       DROP INDEX
     </a>
   </li>
@@ -2162,7 +2176,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/" title="Index overview" class="md-nav__link">
+    <a href="../../14.native-index-statements/README.md" title="Index overview" class="md-nav__link">
       Index overview
     </a>
   </li>
@@ -2174,7 +2188,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/1.text-based-index-restrictions/" title="Full-text restrictions" class="md-nav__link">
+    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/1.text-based-index-restrictions.md" title="Full-text restrictions" class="md-nav__link">
       Full-text restrictions
     </a>
   </li>
@@ -2186,7 +2200,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/2.deploy-es/" title="Deploy Elasticsearch cluster" class="md-nav__link">
+    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/2.deploy-es.md" title="Deploy Elasticsearch cluster" class="md-nav__link">
       Deploy Elasticsearch cluster
     </a>
   </li>
@@ -2198,7 +2212,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/3.deploy-listener/" title="Deploy Raft Listener cluster" class="md-nav__link">
+    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/3.deploy-listener.md" title="Deploy Raft Listener cluster" class="md-nav__link">
       Deploy Raft Listener cluster
     </a>
   </li>
@@ -2210,7 +2224,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../15.full-text-index-statements/1.search-with-text-based-index/" title="Search with full-text index" class="md-nav__link">
+    <a href="../../15.full-text-index-statements/1.search-with-text-based-index.md" title="Search with full-text index" class="md-nav__link">
       Search with full-text index
     </a>
   </li>
@@ -2246,7 +2260,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../16.subgraph-and-path/1.get-subgraph/" title="GET SUBGRAPH" class="md-nav__link">
+    <a href="../../16.subgraph-and-path/1.get-subgraph.md" title="GET SUBGRAPH" class="md-nav__link">
       GET SUBGRAPH
     </a>
   </li>
@@ -2258,7 +2272,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../16.subgraph-and-path/2.find-path/" title="FIND PATH" class="md-nav__link">
+    <a href="../../16.subgraph-and-path/2.find-path.md" title="FIND PATH" class="md-nav__link">
       FIND PATH
     </a>
   </li>
@@ -2294,7 +2308,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../17.query-tuning-statements/1.explain-and-profile/" title="EXPLAIN and PROFILE" class="md-nav__link">
+    <a href="../../17.query-tuning-statements/1.explain-and-profile.md" title="EXPLAIN and PROFILE" class="md-nav__link">
       EXPLAIN and PROFILE
     </a>
   </li>
@@ -2330,7 +2344,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../18.operation-and-maintenance-statements/4.job-statements/" title="Job statements" class="md-nav__link">
+    <a href="../../18.operation-and-maintenance-statements/4.job-statements.md" title="Job statements" class="md-nav__link">
       Job statements
     </a>
   </li>
@@ -2834,7 +2848,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../7.data-security/2.backup-restore/2.compile-br/" title="Compile BR" class="md-nav__link">
+    <a href="../../../7.data-security/2.backup-restore/2.compile-br.md" title="Compile BR" class="md-nav__link">
       Compile BR
     </a>
   </li>
@@ -2949,7 +2963,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/about-exchange/ex-ug-what-is-exchange/" title="What is Nebula Exchange" class="md-nav__link">
+    <a href="../../../nebula-exchange/about-exchange/ex-ug-what-is-exchange.md" title="What is Nebula Exchange" class="md-nav__link">
       What is Nebula Exchange
     </a>
   </li>
@@ -2961,7 +2975,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/about-exchange/ex-ug-limitations/" title="Limitations" class="md-nav__link">
+    <a href="../../../nebula-exchange/about-exchange/ex-ug-limitations.md" title="Limitations" class="md-nav__link">
       Limitations
     </a>
   </li>
@@ -2973,7 +2987,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/about-exchange/ex-ug-terms/" title="Glossary" class="md-nav__link">
+    <a href="../../../nebula-exchange/about-exchange/ex-ug-terms.md" title="Glossary" class="md-nav__link">
       Glossary
     </a>
   </li>
@@ -2985,7 +2999,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/about-exchange/ex-ug-faq/" title="FAQ" class="md-nav__link">
+    <a href="../../../nebula-exchange/about-exchange/ex-ug-faq.md" title="FAQ" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -3002,7 +3016,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/ex-ug-compile/" title="Compile Exchange" class="md-nav__link">
+    <a href="../../../nebula-exchange/ex-ug-compile.md" title="Compile Exchange" class="md-nav__link">
       Compile Exchange
     </a>
   </li>
@@ -3033,7 +3047,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-steps/" title="Use Exchange" class="md-nav__link">
+    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-steps.md" title="Use Exchange" class="md-nav__link">
       Use Exchange
     </a>
   </li>
@@ -3045,7 +3059,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-from-csv/" title="Import data from CSV files" class="md-nav__link">
+    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-from-csv.md" title="Import data from CSV files" class="md-nav__link">
       Import data from CSV files
     </a>
   </li>
@@ -3057,7 +3071,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-json/" title="Import data from JSON files" class="md-nav__link">
+    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-json.md" title="Import data from JSON files" class="md-nav__link">
       Import data from JSON files
     </a>
   </li>
@@ -3069,7 +3083,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-hive/" title="Import data from HIVE" class="md-nav__link">
+    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-hive.md" title="Import data from HIVE" class="md-nav__link">
       Import data from HIVE
     </a>
   </li>
@@ -3105,7 +3119,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/parameter-reference/ex-ug-paras-spark/" title="Spark related parameters" class="md-nav__link">
+    <a href="../../../nebula-exchange/parameter-reference/ex-ug-paras-spark.md" title="Spark related parameters" class="md-nav__link">
       Spark related parameters
     </a>
   </li>
@@ -3117,7 +3131,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/parameter-reference/ex-ug-paras-nebulagraph/" title="Nebula Graph related parameters" class="md-nav__link">
+    <a href="../../../nebula-exchange/parameter-reference/ex-ug-paras-nebulagraph.md" title="Nebula Graph related parameters" class="md-nav__link">
       Nebula Graph related parameters
     </a>
   </li>
@@ -3129,7 +3143,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/parameter-reference/ex-ug-para-import-command/" title="Import command parameters" class="md-nav__link">
+    <a href="../../../nebula-exchange/parameter-reference/ex-ug-para-import-command.md" title="Import command parameters" class="md-nav__link">
       Import command parameters
     </a>
   </li>
@@ -3194,7 +3208,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/about-studio/st-ug-what-is-graph-studio/" title="What is Studio" class="md-nav__link">
+    <a href="../../../nebula-studio/about-studio/st-ug-what-is-graph-studio.md" title="What is Studio" class="md-nav__link">
       What is Studio
     </a>
   </li>
@@ -3206,7 +3220,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/about-studio/st-ug-limitations/" title="Limitations" class="md-nav__link">
+    <a href="../../../nebula-studio/about-studio/st-ug-limitations.md" title="Limitations" class="md-nav__link">
       Limitations
     </a>
   </li>
@@ -3218,7 +3232,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/about-studio/st-ug-check-updates/" title="Check updates" class="md-nav__link">
+    <a href="../../../nebula-studio/about-studio/st-ug-check-updates.md" title="Check updates" class="md-nav__link">
       Check updates
     </a>
   </li>
@@ -3254,7 +3268,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/install-configure/st-ug-deploy/" title="Deploy Studio" class="md-nav__link">
+    <a href="../../../nebula-studio/install-configure/st-ug-deploy.md" title="Deploy Studio" class="md-nav__link">
       Deploy Studio
     </a>
   </li>
@@ -3266,7 +3280,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/install-configure/st-ug-connect/" title="Connect to Nebula Graph" class="md-nav__link">
+    <a href="../../../nebula-studio/install-configure/st-ug-connect.md" title="Connect to Nebula Graph" class="md-nav__link">
       Connect to Nebula Graph
     </a>
   </li>
@@ -3302,7 +3316,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-plan-schema/" title="Design a schema" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-plan-schema.md" title="Design a schema" class="md-nav__link">
       Design a schema
     </a>
   </li>
@@ -3314,7 +3328,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-prepare-csv/" title="Prepare CSV files" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-prepare-csv.md" title="Prepare CSV files" class="md-nav__link">
       Prepare CSV files
     </a>
   </li>
@@ -3326,7 +3340,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-create-schema/" title="Create a schema" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-create-schema.md" title="Create a schema" class="md-nav__link">
       Create a schema
     </a>
   </li>
@@ -3338,7 +3352,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-import-data/" title="Import data" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-import-data.md" title="Import data" class="md-nav__link">
       Import data
     </a>
   </li>
@@ -3350,7 +3364,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-explore/" title="Query graph data" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-explore.md" title="Query graph data" class="md-nav__link">
       Query graph data
     </a>
   </li>
@@ -3405,7 +3419,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/use-console/st-ug-open-in-explore/" title="Open in Explore" class="md-nav__link">
+    <a href="../../../nebula-studio/use-console/st-ug-open-in-explore.md" title="Open in Explore" class="md-nav__link">
       Open in Explore
     </a>
   </li>
@@ -3417,7 +3431,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/use-console/st-ug-visualize-subgraph/" title="View subgraphs" class="md-nav__link">
+    <a href="../../../nebula-studio/use-console/st-ug-visualize-subgraph.md" title="View subgraphs" class="md-nav__link">
       View subgraphs
     </a>
   </li>
@@ -3455,118 +3469,132 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#syntax" class="md-nav__link">
-    Syntax
+  <a href="#_1" class="md-nav__link">
+    语法
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the_workflow_of_match" class="md-nav__link">
-    The workflow of MATCH
+  <a href="#match_1" class="md-nav__link">
+    MATCH工作流程
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use_patterns_in_match_statements" class="md-nav__link">
-    Use patterns in MATCH statements
+  <a href="#opencypher" class="md-nav__link">
+    openCypher兼容性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    使用模式（pattern）
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#match_a_vertex" class="md-nav__link">
-    Match a vertex
+  <a href="#_2" class="md-nav__link">
+    前提条件
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_tag" class="md-nav__link">
-    Match on tag
+  <a href="#_3" class="md-nav__link">
+    匹配点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_vertex_property" class="md-nav__link">
-    Match on vertex property
+  <a href="#_4" class="md-nav__link">
+    匹配标签
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_vid" class="md-nav__link">
-    Match on VID
+  <a href="#_5" class="md-nav__link">
+    匹配点的属性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_connected_vertices" class="md-nav__link">
-    Match connected vertices
+  <a href="#id" class="md-nav__link">
+    匹配点ID
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_paths" class="md-nav__link">
-    Match paths
+  <a href="#_6" class="md-nav__link">
+    匹配连接的点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_edges" class="md-nav__link">
-    Match edges
+  <a href="#_7" class="md-nav__link">
+    匹配路径
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_edge_types_and_properties" class="md-nav__link">
-    Match on edge types and properties
+  <a href="#_8" class="md-nav__link">
+    匹配边
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_on_multiple_edge_types" class="md-nav__link">
-    Match on multiple edge types
+  <a href="#_9" class="md-nav__link">
+    匹配边类型和属性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_multiple_edges" class="md-nav__link">
-    Match multiple edges
+  <a href="#_10" class="md-nav__link">
+    匹配多个边类型
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_fixed-length_paths" class="md-nav__link">
-    Match fixed-length paths
+  <a href="#_11" class="md-nav__link">
+    匹配多条边
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_variable-length_paths" class="md-nav__link">
-    Match variable-length paths
+  <a href="#_12" class="md-nav__link">
+    匹配定长路径
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#match_variable-length_paths_with_multiple_edge_types" class="md-nav__link">
-    Match variable-length paths with multiple edge types
+  <a href="#_13" class="md-nav__link">
+    匹配变长路径
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    匹配多个边类型的变长路径
   </a>
   
 </li>
@@ -3577,79 +3605,79 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common_retrieving_operations" class="md-nav__link">
-    Common retrieving operations
+  <a href="#_15" class="md-nav__link">
+    常用检索操作
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#retrieve_vertex_or_edge_information" class="md-nav__link">
-    Retrieve vertex or edge information
+  <a href="#_16" class="md-nav__link">
+    检索点或边的信息
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_vids" class="md-nav__link">
-    Retrieve VIDs
+  <a href="#id_1" class="md-nav__link">
+    检索点ID
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_tags" class="md-nav__link">
-    Retrieve tags
+  <a href="#_17" class="md-nav__link">
+    检索标签
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_a_single_property_on_a_vertex_or_an_edge" class="md-nav__link">
-    Retrieve a single property on a vertex or an edge
+  <a href="#_18" class="md-nav__link">
+    检索点或边的单个属性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_all_properties_on_a_vertex_or_an_edge" class="md-nav__link">
-    Retrieve all properties on a vertex or an edge
+  <a href="#_19" class="md-nav__link">
+    检索点或边的所有属性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_edge_types" class="md-nav__link">
-    Retrieve edge types
+  <a href="#_20" class="md-nav__link">
+    检索边类型
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_paths" class="md-nav__link">
-    Retrieve paths
+  <a href="#_21" class="md-nav__link">
+    检索路径
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_vertices_in_a_path" class="md-nav__link">
-    Retrieve vertices in a path
+  <a href="#_22" class="md-nav__link">
+    检索路径中的点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_edges_in_a_path" class="md-nav__link">
-    Retrieve edges in a path
+  <a href="#_23" class="md-nav__link">
+    检索路径中的边
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#retrieve_path_length" class="md-nav__link">
-    Retrieve path length
+  <a href="#_24" class="md-nav__link">
+    检索路径长度
   </a>
   
 </li>
@@ -3677,48 +3705,46 @@
                 
                 
                 <h1 id="match">MATCH<a class="headerlink" href="#match" title="Permanent link">&para;</a></h1>
-<p>The <code>MATCH</code> statement provides the searching ability based on pattern matching.</p>
-<p>A <code>MATCH</code> statement defines a <a href="../../1.nGQL-overview/3.graph-patterns/">search pattern</a> and uses it to match data stored in Nebula Graph and to retrieve them in the form defined in the <code>RETURN</code> clause. A <a href="../../8.clauses-and-options/where/"><code>WHERE</code> clause</a> is often used together with the pattern as a filter to the search result.</p>
-<p>The examples in this topic use the <code>nba</code> dataset as the sample dataset.</p>
-<h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<p>The syntax of <code>MATCH</code> is relatively more flexible compared with that of other query statements such as <code>GO</code> or <code>LOOKUP</code>. But generally, it can be summarized as follows.</p>
+<p><code>MATCH</code>语句提供基于模式（pattern）匹配的搜索功能。</p>
+<p>一个<code>MATCH</code>语句定义了一个<a href="../../1.nGQL-overview/3.graph-patterns/">搜索模式</a>，用该模式匹配存储在Nebula Graph中的数据，然后用<code>RETURN</code>子句检索数据。</p>
+<p>本文示例使用测试数据库<code>nba</code>进行演示。</p>
+<h2 id="_1">语法<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>与<code>GO</code>或<code>LOOKUP</code>等其他查询语句相比，<code>MATCH</code>的语法更灵活。<code>MATCH</code>语法可以概括如下：</p>
 <div class="highlight"><pre><span></span><code>MATCH &lt;pattern&gt; [&lt;WHERE clause&gt;] RETURN &lt;output&gt;
 </code></pre></div>
-<h2 id="the_workflow_of_match">The workflow of MATCH<a class="headerlink" href="#the_workflow_of_match" title="Permanent link">&para;</a></h2>
+<h2 id="match_1">MATCH工作流程<a class="headerlink" href="#match_1" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>The <code>MATCH</code> statement uses a <strong>native index</strong> to locate a source vertex. The vertex can be in any position in a pattern. In other words, in a valid <code>MATCH</code> statement, <strong>there must be an indexed property or tag, or a specific VID.</strong> For how to index a property, see <a href="../../14.native-index-statements/1.create-native-index/">Create native index</a>.</p>
-<blockquote>
-<p><strong>NOTE:</strong> The native index for VID is created by default, so you don't need to create an extra index if you want to match on VID.</p>
-</blockquote>
+<p><code>MATCH</code>语句使用原生索引查找起始点，起始点可以在模式的任何位置。即一个有效的<code>MATCH</code>语句，<strong>必须有一个属性、标签或者点已经创建索引</strong>。如何创建索引，请参见<a href="../14.native-index-statements/1.create-native-index.md">创建原生索引</a>。</p>
 </li>
 <li>
-<p>The <code>MATCH</code> statement searches through the pattern to match edges and other vertices.</p>
+<p><code>MATCH</code>语句在模式中搜索，寻找匹配的边或点。</p>
 </li>
 <li>
-<p>The <code>MATCH</code> statement retrieves data according to the <code>RETURN</code> clause.</p>
+<p><code>MATCH</code>语句根据<code>RETURN</code>子句检索数据。</p>
 </li>
 </ol>
+<h2 id="opencypher">openCypher兼容性<a class="headerlink" href="#opencypher" title="Permanent link">&para;</a></h2>
+<p>nGQL暂不支持遍历所有点和边，例如<code>MATCH (v) RETURN v</code>。</p>
+<h2 id="pattern">使用模式（pattern）<a class="headerlink" href="#pattern" title="Permanent link">&para;</a></h2>
+<h3 id="_2">前提条件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>请确保<code>MATCH</code>语句有至少一个索引可用。如果您需要创建索引，但是已经有相关的点、边或属性，您必须在创建索引后重建索引，索引才能生效。</p>
 <blockquote>
-<p><strong>OpenCypher compatibility:</strong> For now, nGQL DOES NOT support scanning all vertices and edges with <code>MATCH</code>. For example, <code>MATCH (v) RETURN v</code>.</p>
+<p><strong>警告</strong>：正确使用索引可以加快查询速度，但是索引会导致写性能大幅降低（降低90%甚至更多）。请<strong>不要随意</strong>在生产环境中使用索引，除非您很清楚使用索引对业务的影响。</p>
 </blockquote>
-<h2 id="use_patterns_in_match_statements">Use patterns in MATCH statements<a class="headerlink" href="#use_patterns_in_match_statements" title="Permanent link">&para;</a></h2>
-<p>Make sure there is at least one index for the <code>MATCH</code> statement to use. If you want to create an index, but there are already vertices or edges related to the tag, edge type, or property that you want to create the index for, you have to rebuild the index after creation to make it take effect on existing vertices or edges.</p>
-<blockquote>
-<p><strong>CAUTION:</strong> Correct use of indexes can speed up queries, but indexes can dramatically reduce the write performance. The performance reduction can be as much as 90% or even more. <strong>DO NOT</strong> use indexes in production environments unless you are fully aware of their influences on your service.</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code>nebula&gt; CREATE TAG INDEX name ON player(name(20)); // Create an index on the name property.
-Execution succeeded (time spent 2957/3986 us)
+<div class="highlight"><pre><span></span><code># 在属性name上创建索引。
+nebula&gt; CREATE TAG INDEX name ON player(name(20)); 
 
-nebula&gt; REBUILD TAG INDEX name; // Rebuild the index.
+# 重建索引使其生效。
+nebula&gt; REBUILD TAG INDEX name; 
 +------------+
 | New Job Id |
 +------------+
 | 121        |
 +------------+
-Got 1 rows  (time spent 2676/3990 us)
 
-nebula&gt; SHOW JOB 121; // Make sure the rebuild job succeeded.
+# 确认重建索引成功。
+nebula&gt; SHOW JOB 121; 
 +----------------+---------------------+------------+------------+------------+
 | Job Id(TaskId) | Command(Dest)       | Status     | Start Time | Stop Time  |
 +----------------+---------------------+------------+------------+------------+
@@ -3730,17 +3756,15 @@ nebula&gt; SHOW JOB 121; // Make sure the rebuild job succeeded.
 +----------------+---------------------+------------+------------+------------+
 | 2              | &quot;storaged1&quot;         | &quot;FINISHED&quot; | 1607073046 | 1607073046 |
 +----------------+---------------------+------------+------------+------------+
-Got 4 rows (time spent 1186/2998 us)
 </code></pre></div>
-<h3 id="match_a_vertex">Match a vertex<a class="headerlink" href="#match_a_vertex" title="Permanent link">&para;</a></h3>
-<p>You can use a user-defined variable in a pair of parentheses to represent a vertex in a pattern. For example: <code>(v)</code>.</p>
-<h3 id="match_on_tag">Match on tag<a class="headerlink" href="#match_on_tag" title="Permanent link">&para;</a></h3>
-<p>To match on a tag, make sure there is an applicable <strong>tag index</strong>. For how to create a tag index, see <a href="../../14.native-index-statements/1.create-native-index/#create_tagedge_type_indexes">Create tag indexes</a>.</p>
+<h3 id="_3">匹配点<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>您可以在一对括号中使用自定义变量来表示模式中的点。例如<code>(v)</code>。</p>
+<h3 id="_4">匹配标签<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><strong>NOTE:</strong> Tag indexes are different from property indexes. If there is an index for a property of a tag, but no index for the tag, you cannot match on the tag.</p>
+<p><strong>说明</strong>：标签的索引和属性的索引不同。如果标签的某个属性有索引，但是标签本身没有索引，您无法基于该标签执行<code>MATCH</code>语句。</p>
 </blockquote>
-<p>A vertex tag is specified with <code>:&lt;tag_name&gt;</code> in a pattern.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player) RETURN v
+<p>您可以在点的右侧用<code>:&lt;tag_name&gt;</code>表示模式中的标签。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player) RETURN v;
 +---------------------------------------------------------------+
 | v                                                             |
 +---------------------------------------------------------------+
@@ -3752,17 +3776,17 @@ Got 4 rows (time spent 1186/2998 us)
 +---------------------------------------------------------------+
 ...
 </code></pre></div>
-<h3 id="match_on_vertex_property">Match on vertex property<a class="headerlink" href="#match_on_vertex_property" title="Permanent link">&para;</a></h3>
-<p>Tag properties are specified with <code>{&lt;prop_name&gt;: &lt;prop_value&gt;}</code> in a pattern after a tag.</p>
-<p>The following example uses the <code>name</code> property to match a vertex.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) RETURN v;
+<h3 id="_5">匹配点的属性<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>您可以在标签的右侧用<code>{&lt;prop_name&gt;: &lt;prop_value&gt;}</code>表示模式中点的属性。</p>
+<div class="highlight"><pre><span></span><code># 使用属性name搜索匹配的点。
+nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) RETURN v;
 +----------------------------------------------------+
 | v                                                  |
 +----------------------------------------------------+
 | (&quot;player100&quot; :player{name: &quot;Tim Duncan&quot;, age: 42}) |
 +----------------------------------------------------+
 </code></pre></div>
-<p>The <code>WHERE</code> clause can do the same thing:</p>
+<p>使用<code>WHERE</code>子句也可以实现相同的操作：</p>
 <div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player) WHERE v.name == &quot;Tim Duncan&quot; RETURN v;
 +----------------------------------------------------+
 | v                                                  |
@@ -3771,23 +3795,18 @@ Got 4 rows (time spent 1186/2998 us)
 +----------------------------------------------------+
 </code></pre></div>
 <blockquote>
-<p><strong>OpenCypher compatibility</strong></p>
-<ul>
-<li>In nGQL, <code>==</code> is the equality operator and <code>=</code> is the assignment operator (as in C++ or Java).</li>
-<li>In openCypher 9, <code>=</code> is the equality operator.</li>
-</ul>
+<p><strong>openCypher兼容性</strong>：在openCypher 9中，<code>=</code>是相等运算符，在nGQL中，<code>==</code>是相等运算符，<code>=</code>是赋值运算符。</p>
 </blockquote>
-<h3 id="match_on_vid">Match on VID<a class="headerlink" href="#match_on_vid" title="Permanent link">&para;</a></h3>
-<p>You can use the VID to match a vertex. The <code>id()</code> function can retrieve the VID of a vertex.</p>
+<h3 id="id">匹配点ID<a class="headerlink" href="#id" title="Permanent link">&para;</a></h3>
+<p>您可以使用点ID去匹配点。<code>id()</code>函数可以检索点的ID。</p>
 <div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v) WHERE id(v) == &#39;player101&#39; RETURN v;
 +---------------------------------------------------+
 | v                                                 |
 +---------------------------------------------------+
 | (player101) player.name:Tony Parker,player.age:36 |
 +---------------------------------------------------+
-Got 1 rows (time spent 1710/2406 us)
 </code></pre></div>
-<p>To match on multiple VIDs, use <code>WHERE id(v) IN [vid_list]</code>.</p>
+<p>要匹配多个点的ID，可以用<code>WHERE id(v) IN [vid_list]</code>。</p>
 <div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player { name: &#39;Tim Duncan&#39; })--(v2) \
         WHERE id(v2) IN [&quot;player101&quot;, &quot;player102&quot;] RETURN v2;
 +-----------------------------------------------------------+
@@ -3799,18 +3818,14 @@ Got 1 rows (time spent 1710/2406 us)
 +-----------------------------------------------------------+
 | (&quot;player101&quot; :player{name: &quot;Tony Parker&quot;, age: 36})       |
 +-----------------------------------------------------------+
-Got 3 rows (time spent 3107/3683 us)
 </code></pre></div>
-<h3 id="match_connected_vertices">Match connected vertices<a class="headerlink" href="#match_connected_vertices" title="Permanent link">&para;</a></h3>
-<p>You can use the <code>--</code> symbol to represent edges of both directions and match vertices connected by these edges.</p>
+<h3 id="_6">匹配连接的点<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>您可以使用<code>--</code>符号表示两个方向的边，并匹配这些边连接的点。</p>
 <blockquote>
-<p><strong>Legacy version compatibility:</strong></p>
-<ul>
-<li>In nGQL 1.x, the <code>--</code> symbol is used for inline comments.</li>
-<li>Starting from nGQL 2.0, the <code>--</code> symbol represents an incoming or outgoing edge.</li>
-</ul>
+<p><strong>说明</strong>：在nGQL 1.x中，<code>--</code>符号用于行内注释，在nGQL 2.x中，<code>--</code>符号表示出边或入边。</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})--(v2) RETURN v2.name AS Name;
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})--(v2) \
+        RETURN v2.name AS Name;
 +---------------------+
 | Name                |
 +---------------------+
@@ -3825,10 +3840,11 @@ Got 3 rows (time spent 3107/3683 us)
 | &quot;Aron Baynes&quot;       |
 +---------------------+
 ...
-Got 13 rows (time spent 6029/8976 us)
 </code></pre></div>
-<p>And you can add a <code>&gt;</code> or <code>&lt;</code> to the <code>--</code> symbol to specify the direction of an edge.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})--&gt;(v2) RETURN v2.name AS Name;
+<p>您可以在<code>--</code>符号上增加<code>&lt;</code>或<code>&gt;</code>符号指定边的方向。</p>
+<div class="highlight"><pre><span></span><code># --&gt;表示边从v开始，指向v2。对于点v来说是出边，对于点v2来说是入边。
+nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})--&gt;(v2) \
+        RETURN v2.name AS Name;
 +-----------------+
 | Name            |
 +-----------------+
@@ -3838,11 +3854,10 @@ Got 13 rows (time spent 6029/8976 us)
 +-----------------+
 | &quot;Manu Ginobili&quot; |
 +-----------------+
-Got 3 rows (time spent 2897/5993 us)
 </code></pre></div>
-<p>In the preceding example, <code>--&gt;</code> represents an edge that starts from <code>v</code> and points to <code>v2</code>. To <code>v</code>, this is an outgoing edge, and to <code>v2</code> this is an incoming edge.</p>
-<p>To extend the pattern, add more edges and vertices.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})--&gt;(v2)&lt;--(v3) RETURN v3.name AS Name;
+<p>如果需要扩展模式，可以增加更多点和边。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})--&gt;(v2)&lt;--(v3) \
+        RETURN v3.name AS Name;
 +---------------------+
 | Name                |
 +---------------------+
@@ -3858,8 +3873,9 @@ Got 3 rows (time spent 2897/5993 us)
 +---------------------+
 ...
 </code></pre></div>
-<p>If you don't need to refer to a vertex, you can omit the variable representing it in the parentheses.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})--&gt;()&lt;--(v3) RETURN v3.name AS Name;
+<p>如果您不需要引用点，可以省略括号中表示点的变量。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})--&gt;()&lt;--(v3) \
+        RETURN v3.name AS Name;
 +---------------------+
 | Name                |
 +---------------------+
@@ -3875,9 +3891,10 @@ Got 3 rows (time spent 2897/5993 us)
 +---------------------+
 ...
 </code></pre></div>
-<h3 id="match_paths">Match paths<a class="headerlink" href="#match_paths" title="Permanent link">&para;</a></h3>
-<p>Connected vertices and edges form a path. You can use a user-defined variable as follows to name a path.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})--&gt;(v2) RETURN p;
+<h3 id="_7">匹配路径<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>连接起来的点和边构成了路径。您可以使用自定义变量命名路径。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})--&gt;(v2) \
+        RETURN p;
 +-------------------------------------------+
 | p                                         |
 +-------------------------------------------+
@@ -3887,14 +3904,14 @@ Got 3 rows (time spent 2897/5993 us)
 +-------------------------------------------+
 | &lt;(&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;})-[:serve@0 {end_year: 2016, start_year: 1997}]-&gt;(&quot;team204&quot; :team{name: &quot;Spurs&quot;})&gt; |
 +-------------------------------------------+
-Got 3 rows (time spent 3717/4573 us)
 </code></pre></div>
 <blockquote>
-<p><strong>OpenCypher compatibility:</strong> In nGQL, the <code>@</code> symbol represents the rank of an edge, but openCypher has no such a concept.</p>
+<p><strong>openCypher兼容性</strong>：在nGQL中，<code>@</code>符号表示边的rank，在openCypher中，没有rank概念。</p>
 </blockquote>
-<h3 id="match_edges">Match edges<a class="headerlink" href="#match_edges" title="Permanent link">&para;</a></h3>
-<p>Besides using <code>--</code>, <code>--&gt;</code>, or <code>&lt;--</code> to indicate a nameless edge, you can use a variable in a pair of square brackets to represent a named edge. For example: <code>-[e]-</code>.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e]-(v2) RETURN e;
+<h3 id="_8">匹配边<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>除了用<code>--</code>、<code>--&gt;</code>、<code>&lt;--</code>表示未命名的边之外，您还可以在方括号中使用自定义变量命名边。例如<code>-[e]-</code>。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e]-(v2) \
+        RETURN e;
 +---------------------------------------------------------------------------+
 | e                                                                         |
 +---------------------------------------------------------------------------+
@@ -3906,18 +3923,19 @@ Got 3 rows (time spent 3717/4573 us)
 +---------------------------------------------------------------------------+
 ...
 </code></pre></div>
-<h3 id="match_on_edge_types_and_properties">Match on edge types and properties<a class="headerlink" href="#match_on_edge_types_and_properties" title="Permanent link">&para;</a></h3>
-<p>Just like tags, edge types are specified with <code>:&lt;edge_type&gt;</code>. For example: <code>-[e:serve]-</code>.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e:serve]-(v2) RETURN e;
+<h3 id="_9">匹配边类型和属性<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>和点一样，您可以用<code>:&lt;edge_type&gt;</code>表示模式中的边类型。例如<code>-[e:serve]-</code>。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e:serve]-(v2) \
+        RETURN e;
 +---------------------------------------------------------------------------+
 | e                                                                         |
 +---------------------------------------------------------------------------+
 | [:serve &quot;player100&quot;-&gt;&quot;team204&quot; @0 {end_year: 2016, start_year: 1997}]     |
 +---------------------------------------------------------------------------+
-Got 1 rows (time spent 5041/5630 us)
 </code></pre></div>
-<p>And edge type properties are specified with <code>{&lt;prop_name&gt;: &lt;prop_value&gt;}</code> after the <code>:&lt;edge_type&gt;</code>. For example: <code>[e:follow{likeness:95}]</code>.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e:follow{degree:95}]-&gt;(v2) RETURN e;
+<p>您可以用<code>{&lt;prop_name&gt;: &lt;prop_value&gt;}</code>表示模式中边类型的属性。例如<code>[e:follow{likeness:95}]</code>。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e:follow{degree:95}]-&gt;(v2) \
+        RETURN e;
 +--------------------------------------------------------+
 | e                                                      |
 +--------------------------------------------------------+
@@ -3925,11 +3943,11 @@ Got 1 rows (time spent 5041/5630 us)
 +--------------------------------------------------------+
 | [:follow &quot;player100&quot;-&gt;&quot;player125&quot; @0 {degree: 95}]     |
 +--------------------------------------------------------+
-Got 2 rows (time spent 6080/6728 us)
 </code></pre></div>
-<h3 id="match_on_multiple_edge_types">Match on multiple edge types<a class="headerlink" href="#match_on_multiple_edge_types" title="Permanent link">&para;</a></h3>
-<p>The <code>|</code> symbol can help matching on multiple edge types. For example: <code>[e:follow|:serve]</code>.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e:follow|:serve]-&gt;(v2) RETURN e;
+<h3 id="_10">匹配多个边类型<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>使用<code>|</code>可以匹配多个边类型。例如<code>[e:follow|:serve]</code>。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e:follow|:serve]-&gt;(v2) \
+        RETURN e;
 +---------------------------------------------------------------------------+
 | e                                                                         |
 +---------------------------------------------------------------------------+
@@ -3939,11 +3957,11 @@ Got 2 rows (time spent 6080/6728 us)
 +---------------------------------------------------------------------------+
 | [:serve &quot;player100&quot;-&gt;&quot;team204&quot; @0 {end_year: 2016, start_year: 1997}]     |
 +---------------------------------------------------------------------------+
-Got 3 rows (time spent 4264/4976 us)
 </code></pre></div>
-<h3 id="match_multiple_edges">Match multiple edges<a class="headerlink" href="#match_multiple_edges" title="Permanent link">&para;</a></h3>
-<p>You can expand a pattern to match multiple edges in a path.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[]-&gt;(v2)&lt;-[e:serve]-(v3) RETURN v2, v3;
+<h3 id="_11">匹配多条边<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>您可以扩展模式，匹配路径中的多条边。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[]-&gt;(v2)&lt;-[e:serve]-(v3) \
+        RETURN v2, v3;
 +------------------------------------+-----------------------------------------------------------+
 | v2                                 | v3                                                        |
 +------------------------------------+-----------------------------------------------------------+
@@ -3955,9 +3973,10 @@ Got 3 rows (time spent 4264/4976 us)
 +------------------------------------+-----------------------------------------------------------+
 ...
 </code></pre></div>
-<h3 id="match_fixed-length_paths">Match fixed-length paths<a class="headerlink" href="#match_fixed-length_paths" title="Permanent link">&para;</a></h3>
-<p>To match a fixed-length path, use the <code>:&lt;edge_type&gt;*&lt;hop&gt;</code> pattern. <code>hop</code> must be a non-negative integer.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e:follow*2]-&gt;(v2) RETURN DISTINCT v2 AS Friends;
+<h3 id="_12">匹配定长路径<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>您可以在模式中使用<code>:&lt;edge_type&gt;*&lt;hop&gt;</code>匹配定长路径。<code>hop</code>必须是一个非负整数。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e:follow*2]-&gt;(v2) \
+        RETURN DISTINCT v2 AS Friends;
 +-----------------------------------------------------------+
 | Friends                                                   |
 +-----------------------------------------------------------+
@@ -3967,43 +3986,38 @@ Got 3 rows (time spent 4264/4976 us)
 +-----------------------------------------------------------+
 | (&quot;player125&quot; :player{name: &quot;Manu Ginobili&quot;, age: 41})     |
 +-----------------------------------------------------------+
-Got 3 rows (time spent 4863/5591 us)
 </code></pre></div>
-<p>If <code>hop</code> is 0, the pattern matches the source vertex on the path.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) -[*0]-&gt; (v2) RETURN v2;
+<p>如果<code>hop</code>为0，模式会匹配路径上的起始点。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) -[*0]-&gt; (v2) \
+        RETURN v2;
 +----------------------------------------------------+
 | v2                                                 |
 +----------------------------------------------------+
 | (&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;}) |
 +----------------------------------------------------+
-Got 1 rows (time spent 2785/3377 us)
 </code></pre></div>
-<h3 id="match_variable-length_paths">Match variable-length paths<a class="headerlink" href="#match_variable-length_paths" title="Permanent link">&para;</a></h3>
-<p>You can use the <code>:&lt;edge_type&gt;*[minHop]..&lt;maxHop&gt;</code> pattern to match variable-length paths.</p>
+<h3 id="_13">匹配变长路径<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>您可以在模式中使用<code>:&lt;edge_type&gt;*[minHop]..&lt;maxHop&gt;</code>匹配变长路径。</p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
+<th align="left">参数</th>
+<th align="left">说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>minHop</code></td>
-<td>Optional. Represents the minimum length of the path. <code>minHop</code> must be a non-negative integer. The default value is 1.</td>
+<td align="left"><code>minHop</code></td>
+<td align="left">可选项。表示路径的最小长度。<code>minHop</code>必须是一个非负整数，默认值为1。</td>
 </tr>
 <tr>
-<td><code>maxHop</code></td>
-<td>Required. Represents the maximum length of the path. <code>maxHop</code> must be a non-negative integer. It has no default value.</td>
+<td align="left"><code>maxHop</code></td>
+<td align="left">必选项。表示路径的最大长度。<code>maxHop</code>必须是一个非负整数，没有默认值。</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>OpenCypher compatibility</strong></p>
-<ul>
-<li>In nGQL, <code>maxHop</code> is required. And <code>..</code> cannot be omitted after <code>minHop</code>.</li>
-<li>In openCypher, <code>maxHop</code> is optional and default to infinity. When no bounds are given, <code>..</code> can be omitted.</li>
-</ul>
+<p><strong>openCypher兼容性</strong>：在openCypher中，<code>maxHop</code>是可选项，默认为无穷大。当没有设置时，<code>..</code>可以省略。在nGQL中，<code>maxHop</code>是必选项，而且<code>..</code>不可以省略。</p>
 </blockquote>
 <div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e:follow*1..3]-&gt;(v2) \
         RETURN v2 AS Friends;
@@ -4018,26 +4032,26 @@ Got 1 rows (time spent 2785/3377 us)
 +-----------------------------------------------------------+
 | (&quot;player102&quot; :player{age: 33, name: &quot;LaMarcus Aldridge&quot;}) |
 +-----------------------------------------------------------+
-Got 4 rows (time spent 6166/6887 us)
 </code></pre></div>
-<p>You can use the <code>DISTINCT</code> keyword to aggregate duplicate results.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e:follow*1..3]-&gt;(v2:player) \
+<p>您可以使用<code>DISTINCT</code>关键字聚合重复结果。</p>
+<p>```ngql
+nebula&gt; MATCH p=(v:player{name:"Tim Duncan"})-[e:follow*1..3]-&gt;(v2:player) \
         RETURN DISTINCT v2 AS Friends, count(v2);
 +-----------------------------------------------------------+-----------+
 | Friends                                                   | COUNT(v2) |
 +-----------------------------------------------------------+-----------+
-| (&quot;player125&quot; :player{age: 41, name: &quot;Manu Ginobili&quot;})     | 3         |
+| ("player125" :player{age: 41, name: "Manu Ginobili"})     | 3         |
 +-----------------------------------------------------------+-----------+
-| (&quot;player102&quot; :player{age: 33, name: &quot;LaMarcus Aldridge&quot;}) | 1         |
+| ("player102" :player{age: 33, name: "LaMarcus Aldridge"}) | 1         |
 +-----------------------------------------------------------+-----------+
-| (&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;})        | 4         |
+| ("player100" :player{age: 42, name: "Tim Duncan"})        | 4         |
 +-----------------------------------------------------------+-----------+
-| (&quot;player101&quot; :player{age: 36, name: &quot;Tony Parker&quot;})       | 3         |
+| ("player101" :player{age: 36, name: "Tony Parker"})       | 3         |
 +-----------------------------------------------------------+-----------+
-Got 4 rows (time spent 5502/6556 us)
-</code></pre></div>
-<p>If <code>minHop</code> is 0, the pattern matches the source vertex. Compared to the preceding statement, the following statement uses 0 as the <code>minHop</code>, so in the following result set <code>"Tim Duncan"</code> is counted one more time than it is in the preceding result set because it is the source vertex.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e:follow*0..3]-&gt;(v2:player) \
+<div class="highlight"><pre><span></span><code>如果`minHop`为`0`，模式会匹配路径上的起始点。与上个示例相比，下面的示例设置`minHop`为`0`，因为它是起始点，所以结果集中`&quot;Tim Duncan&quot;`比上个示例多计算一次。
+
+```ngql
+nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e:follow*0..3]-&gt;(v2:player) \
         RETURN DISTINCT v2 AS Friends, count(v2);
 +-----------------------------------------------------------+-----------+
 | Friends                                                   | COUNT(v2) |
@@ -4050,10 +4064,9 @@ Got 4 rows (time spent 5502/6556 us)
 +-----------------------------------------------------------+-----------+
 | (&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;})        | 5         |
 +-----------------------------------------------------------+-----------+
-Got 4 rows (time spent 5553/6275 us)
-</code></pre></div>
-<h3 id="match_variable-length_paths_with_multiple_edge_types">Match variable-length paths with multiple edge types<a class="headerlink" href="#match_variable-length_paths_with_multiple_edge_types" title="Permanent link">&para;</a></h3>
-<p>You can specify multiple edge types in a fixed-length or variable-length pattern. In this case, <code>hop</code>, <code>minHop</code>, and <code>maxHop</code> take effect on all edge types.</p>
+</code></pre></div></p>
+<h3 id="_14">匹配多个边类型的变长路径<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>您可以在变长或定长模式中指定多个边类型。<code>hop</code>、<code>minHop</code>和<code>maxHop</code>对所有边类型都生效。</p>
 <div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e:follow|serve*2]-&gt;(v2) \
         RETURN DISTINCT v2;
 +-----------------------------------------------------------+
@@ -4069,21 +4082,20 @@ Got 4 rows (time spent 5553/6275 us)
 +-----------------------------------------------------------+
 | (&quot;player215&quot; :team{name: &quot;Hornets&quot;})                      |
 +-----------------------------------------------------------+
-Got 5 rows (time spent 3834/4571 us)
 </code></pre></div>
-<h2 id="common_retrieving_operations">Common retrieving operations<a class="headerlink" href="#common_retrieving_operations" title="Permanent link">&para;</a></h2>
-<p>This section shows how to retrieve commonly used items with <code>MATCH</code> statements.</p>
-<h3 id="retrieve_vertex_or_edge_information">Retrieve vertex or edge information<a class="headerlink" href="#retrieve_vertex_or_edge_information" title="Permanent link">&para;</a></h3>
-<p>Use <code>RETURN {&lt;vertex_name&gt; | &lt;edge_name&gt;}</code> to retrieve all the information of a vertex or an edge.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) RETURN v;
+<h2 id="_15">常用检索操作<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<h3 id="_16">检索点或边的信息<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>使用<code>RETURN {&lt;vertex_name&gt; | &lt;edge_name&gt;}</code>检索点或边的所有信息。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) \
+        RETURN v;
 +----------------------------------------------------+
 | v                                                  |
 +----------------------------------------------------+
 | (&quot;player100&quot; :player{name: &quot;Tim Duncan&quot;, age: 42}) |
 +----------------------------------------------------+
-Got 1 rows (time spent 1863/2545 us)
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e]-&gt;(v2) RETURN e;
+
+nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e]-&gt;(v2) \
+        RETURN e;
 +---------------------------------------------------------------------------+
 | e                                                                         |
 +---------------------------------------------------------------------------+
@@ -4093,59 +4105,59 @@ Got 1 rows (time spent 1863/2545 us)
 +---------------------------------------------------------------------------+
 | [:serve &quot;player100&quot;-&gt;&quot;team204&quot; @0 {end_year: 2016, start_year: 1997}]     |
 +---------------------------------------------------------------------------+
-Got 3 rows (time spent 3139/3773 us)
 </code></pre></div>
-<h3 id="retrieve_vids">Retrieve VIDs<a class="headerlink" href="#retrieve_vids" title="Permanent link">&para;</a></h3>
-<p>Use the <code>id()</code> function to retrieve VIDs.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) RETURN id(v);
+<h3 id="id_1">检索点ID<a class="headerlink" href="#id_1" title="Permanent link">&para;</a></h3>
+<p>使用<code>id()</code>函数检索点ID。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) \
+        RETURN id(v);
 +-------------+
 | id(v)       |
 +-------------+
 | &quot;player100&quot; |
 +-------------+
-Got 1 rows (time spent 2070/2747 us)
 </code></pre></div>
-<h3 id="retrieve_tags">Retrieve tags<a class="headerlink" href="#retrieve_tags" title="Permanent link">&para;</a></h3>
-<p>Use the <code>labels()</code> function to retrieve the list of tags on a vertex.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) RETURN labels(v);
+<h3 id="_17">检索标签<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>使用<code>labels()</code>函数检索点上的标签列表。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) \
+        RETURN labels(v);
 +------------+
 | labels(v)  |
 +------------+
 | [&quot;player&quot;] |
 +------------+
-Got 1 rows (time spent 2198/2941 us)
 </code></pre></div>
-<p>To retrieve the nth element in the <code>labels(v)</code> list, use <code>labels(v)[n-1]</code>. The following example shows how to use <code>labels(v)[0]</code> to retrieve the first tag in the list.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) RETURN labels(v)[0];
+<p>检索列表<code>labels(v)</code>中的第N个元素，可以使用<code>labels(v)[n-1]</code>。例如下面示例使用<code>labels(v)[0]</code>检索第一个元素。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) \
+        RETURN labels(v)[0];
 +--------------+
 | labels(v)[0] |
 +--------------+
 | &quot;player&quot;     |
 +--------------+
-Got 1 rows (time spent 2609/3481 us)
 </code></pre></div>
-<h3 id="retrieve_a_single_property_on_a_vertex_or_an_edge">Retrieve a single property on a vertex or an edge<a class="headerlink" href="#retrieve_a_single_property_on_a_vertex_or_an_edge" title="Permanent link">&para;</a></h3>
-<p>Use <code>RETURN {&lt;vertex_name&gt; | &lt;edge_name&gt;}.&lt;property&gt;</code> to retrieve a single property.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) RETURN v.age;
+<h3 id="_18">检索点或边的单个属性<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>使用<code>RETURN {&lt;vertex_name&gt; | &lt;edge_name&gt;}.&lt;property&gt;</code>检索单个属性。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) \
+        RETURN v.age;
 +-------+
 | v.age |
 +-------+
 | 42    |
 +-------+
-Got 1 rows (time spent 2261/2973 us)
 </code></pre></div>
-<p>Use <code>AS</code> to specify an alias for a property.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) RETURN v.age AS Age;
+<p>使用<code>AS</code>设置属性的别名。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;}) \
+        RETURN v.age AS Age;
 +-----+
 | Age |
 +-----+
 | 42  |
 +-----+
-Got 1 rows (time spent 1762/2321 us)
 </code></pre></div>
-<h3 id="retrieve_all_properties_on_a_vertex_or_an_edge">Retrieve all properties on a vertex or an edge<a class="headerlink" href="#retrieve_all_properties_on_a_vertex_or_an_edge" title="Permanent link">&para;</a></h3>
-<p>Use the <code>properties()</code> function to retrieve all properties on a vertex or an edge.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[]-&gt;(v2) RETURN properties(v2);
+<h3 id="_19">检索点或边的所有属性<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>使用<code>properties()</code>函数检索点或边的所有属性。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[]-&gt;(v2) \
+        RETURN properties(v2);
 +------------------------------------+
 | properties(v2)                     |
 +------------------------------------+
@@ -4155,11 +4167,11 @@ Got 1 rows (time spent 1762/2321 us)
 +------------------------------------+
 | {&quot;age&quot;:41, &quot;name&quot;:&quot;Manu Ginobili&quot;} |
 +------------------------------------+
-Got 3 rows (time spent 2943/3541 us)
 </code></pre></div>
-<h3 id="retrieve_edge_types">Retrieve edge types<a class="headerlink" href="#retrieve_edge_types" title="Permanent link">&para;</a></h3>
-<p>Use the <code>type()</code> function to retrieve the types of the matched edges.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e]-&gt;() RETURN DISTINCT type(e);
+<h3 id="_20">检索边类型<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>使用<code>type()</code>函数检索匹配的边类型。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[e]-&gt;() \
+        RETURN DISTINCT type(e);
 +----------+
 | type(e)  |
 +----------+
@@ -4167,11 +4179,11 @@ Got 3 rows (time spent 2943/3541 us)
 +----------+
 | &quot;serve&quot;  |
 +----------+
-Got 3 rows (time spent 3776/4660 us)
 </code></pre></div>
-<h3 id="retrieve_paths">Retrieve paths<a class="headerlink" href="#retrieve_paths" title="Permanent link">&para;</a></h3>
-<p>Use <code>RETURN &lt;path_name&gt;</code> to retrieve all the information of the matched paths.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[*3]-&gt;() RETURN p;
+<h3 id="_21">检索路径<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>使用<code>RETURN &lt;path_name&gt;</code>检索匹配路径的所有信息。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[*3]-&gt;() \
+        RETURN p;
 +-------------------------------------------------------------------------------------------------+
 | p                                                                                               |
 +-------------------------------------------------------------------------------------------------+
@@ -4183,9 +4195,10 @@ Got 3 rows (time spent 3776/4660 us)
 +-------------------------------------------------------------------------------------------------+
 ...
 </code></pre></div>
-<h3 id="retrieve_vertices_in_a_path">Retrieve vertices in a path<a class="headerlink" href="#retrieve_vertices_in_a_path" title="Permanent link">&para;</a></h3>
-<p>Use the <code>nodes()</code> function to retrieve all vertices in a path.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[]-&gt;(v2) RETURN nodes(p);
+<h3 id="_22">检索路径中的点<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>使用<code>nodes()</code>函数检索路径中的所有点。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[]-&gt;(v2) \
+        RETURN nodes(p);
 +---------------------------------------------------------------------------------------------------------------------+
 | nodes(p)                                                                                                            |
 +---------------------------------------------------------------------------------------------------------------------+
@@ -4195,11 +4208,11 @@ Got 3 rows (time spent 3776/4660 us)
 +---------------------------------------------------------------------------------------------------------------------+
 | [(&quot;player100&quot; :star{} :player{age: 42, name: &quot;Tim Duncan&quot;}), (&quot;player125&quot; :player{name: &quot;Manu Ginobili&quot;, age: 41})] |
 +---------------------------------------------------------------------------------------------------------------------+
-Got 3 rows (time spent 2529/3128 us)
 </code></pre></div>
-<h3 id="retrieve_edges_in_a_path">Retrieve edges in a path<a class="headerlink" href="#retrieve_edges_in_a_path" title="Permanent link">&para;</a></h3>
-<p>Use the <code>relationships()</code> function to retrieve all edges in a path.</p>
-<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[]-&gt;(v2) RETURN relationships(p);
+<h3 id="_23">检索路径中的边<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>使用<code>relationships()</code>函数检索路径中的所有边。</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[]-&gt;(v2) \
+        RETURN relationships(p);
 +-----------------------------------------------------------------------------+
 | relationships(p)                                                            |
 +-----------------------------------------------------------------------------+
@@ -4209,10 +4222,9 @@ Got 3 rows (time spent 2529/3128 us)
 +-----------------------------------------------------------------------------+
 | [[:serve &quot;player100&quot;-&gt;&quot;team204&quot; @0 {end_year: 2016, start_year: 1997}]]     |
 +-----------------------------------------------------------------------------+
-Got 3 rows (time spent 2715/3363 us)
 </code></pre></div>
-<h3 id="retrieve_path_length">Retrieve path length<a class="headerlink" href="#retrieve_path_length" title="Permanent link">&para;</a></h3>
-<p>Use the <code>length()</code> function to retrieve the length of a path.</p>
+<h3 id="_24">检索路径长度<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>使用<code>length()</code>函数检索路径的长度。</p>
 <div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})-[*..2]-&gt;(v2) \
         RETURN p AS Paths, length(p) AS Length;
 +----------------------------------------------------------------------+--------+
@@ -4265,7 +4277,7 @@ Got 3 rows (time spent 2715/3363 us)
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Previous
+                  上一页
                 </span>
                 Reduce
               </span>
@@ -4277,7 +4289,7 @@ Got 3 rows (time spent 2715/3363 us)
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  下一页
                 </span>
                 LOOKUP
               </span>
@@ -4329,6 +4341,23 @@ Got 3 rows (time spent 2715/3363 us)
     </div>
     
       <script src="../../../assets/javascripts/application.c33a9706.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.ja.js"></script>
+              
+            
+          
+          
+        
       
       <script>app.initialize({version:"1.1.2",url:{base:"../../.."}})</script>
       

@@ -3,7 +3,7 @@
 
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -13,36 +13,36 @@
         <meta name="description" content="Documentation for Nebula Graph Database">
       
       
-        <link rel="canonical" href="https://docs.nebula-graph.io/2.0/3.ngql-guide/11.edge-type-statements/2.drop-edge/">
+        <link rel="canonical" href="https://docs.nebula-graph.io/2.0/3.ngql-guide/1.nGQL-overview/2.graph-modeling/">
       
       
         <meta name="author" content="Nebula Graph">
       
       
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+        <meta name="lang:clipboard.copy" content="复制">
       
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+        <meta name="lang:clipboard.copied" content="已复制">
       
-        <meta name="lang:search.language" content="en">
+        <meta name="lang:search.language" content="ja">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
         <meta name="lang:search.pipeline.trimmer" content="True">
       
-        <meta name="lang:search.result.none" content="No matching documents">
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
       
-        <meta name="lang:search.result.one" content="1 matching document">
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
       
-        <meta name="lang:search.result.other" content="# matching documents">
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
       
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
     
     
       
-        <title>DROP EDGE - Nebula Graph Database Manual</title>
+        <title>图建模 - Nebula Graph Database Manual</title>
       
     
     
@@ -95,8 +95,8 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#drop_edge" tabindex="0" class="md-skip">
-        Skip to content
+      <a href="#_1" tabindex="0" class="md-skip">
+        跳转至
       </a>
     
     
@@ -121,7 +121,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                DROP EDGE
+                图建模
               
             </span>
           
@@ -135,7 +135,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -145,7 +145,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="result">
           <div class="md-search-result__meta">
-            Type to start searching
+            键入以开始搜索
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -163,7 +163,7 @@
 
   
 
-<a href="https://github.com/vesoft-inc/nebula" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/vesoft-inc/nebula" title="前往 Github 仓库" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -210,7 +210,7 @@
 
   
 
-<a href="https://github.com/vesoft-inc/nebula" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/vesoft-inc/nebula" title="前往 Github 仓库" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -458,12 +458,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       nGQL guide
@@ -500,7 +498,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../1.nGQL-overview/1.overview/" title="Overview" class="md-nav__link">
+    <a href="../1.overview/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -512,7 +510,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../1.nGQL-overview/3.graph-patterns/" title="Graph patterns" class="md-nav__link">
+    <a href="../3.graph-patterns/" title="Graph patterns" class="md-nav__link">
       Graph patterns
     </a>
   </li>
@@ -1535,12 +1533,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-10" type="checkbox" id="nav-3-10" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-10" type="checkbox" id="nav-3-10">
     
     <label class="md-nav__link" for="nav-3-10">
       Edge type statements
@@ -1558,7 +1554,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../1.create-edge/" title="CREATE EDGE" class="md-nav__link">
+    <a href="../../11.edge-type-statements/1.create-edge/" title="CREATE EDGE" class="md-nav__link">
       CREATE EDGE
     </a>
   </li>
@@ -1568,56 +1564,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        DROP EDGE
-      </label>
-    
-    <a href="./" title="DROP EDGE" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../11.edge-type-statements/2.drop-edge.md" title="DROP EDGE" class="md-nav__link">
       DROP EDGE
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#edge_type_name" class="md-nav__link">
-    Edge type name
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1627,7 +1578,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../3.alter-edge/" title="ALTER EDGE" class="md-nav__link">
+    <a href="../../11.edge-type-statements/3.alter-edge.md" title="ALTER EDGE" class="md-nav__link">
       ALTER EDGE
     </a>
   </li>
@@ -1639,7 +1590,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../4.show-edges/" title="SHOW EDGES" class="md-nav__link">
+    <a href="../../11.edge-type-statements/4.show-edges.md" title="SHOW EDGES" class="md-nav__link">
       SHOW EDGES
     </a>
   </li>
@@ -1651,7 +1602,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../5.describe-edge/" title="DESCRIBE EDGE" class="md-nav__link">
+    <a href="../../11.edge-type-statements/5.describe-edge.md" title="DESCRIBE EDGE" class="md-nav__link">
       DESCRIBE EDGE
     </a>
   </li>
@@ -1699,7 +1650,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12.vertex-statements/4.delete-vertex/" title="DELETE VERTEX" class="md-nav__link">
+    <a href="../../12.vertex-statements/4.delete-vertex.md" title="DELETE VERTEX" class="md-nav__link">
       DELETE VERTEX
     </a>
   </li>
@@ -1711,7 +1662,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12.vertex-statements/2.update-vertex/" title="UPDATE VERTEX" class="md-nav__link">
+    <a href="../../12.vertex-statements/2.update-vertex.md" title="UPDATE VERTEX" class="md-nav__link">
       UPDATE VERTEX
     </a>
   </li>
@@ -1723,7 +1674,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12.vertex-statements/3.upsert-vertex/" title="UPSERT VERTEX" class="md-nav__link">
+    <a href="../../12.vertex-statements/3.upsert-vertex.md" title="UPSERT VERTEX" class="md-nav__link">
       UPSERT VERTEX
     </a>
   </li>
@@ -1735,7 +1686,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12.vertex-statements/5.fetch-vertex/" title="FETCH VERTEX" class="md-nav__link">
+    <a href="../../12.vertex-statements/5.fetch-vertex.md" title="FETCH VERTEX" class="md-nav__link">
       FETCH VERTEX
     </a>
   </li>
@@ -1771,7 +1722,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/1.insert-edge/" title="INSERT EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/1.insert-edge.md" title="INSERT EDGE" class="md-nav__link">
       INSERT EDGE
     </a>
   </li>
@@ -1783,7 +1734,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/4.delete-edge/" title="DELETE EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/4.delete-edge.md" title="DELETE EDGE" class="md-nav__link">
       DELETE EDGE
     </a>
   </li>
@@ -1795,7 +1746,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/2.update-edge/" title="UPDATE EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/2.update-edge.md" title="UPDATE EDGE" class="md-nav__link">
       UPDATE EDGE
     </a>
   </li>
@@ -1807,7 +1758,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/3.upsert-edge/" title="UPSERT EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/3.upsert-edge.md" title="UPSERT EDGE" class="md-nav__link">
       UPSERT EDGE
     </a>
   </li>
@@ -1819,7 +1770,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../13.edge-statements/5.fetch-edge/" title="FETCH EDGE" class="md-nav__link">
+    <a href="../../13.edge-statements/5.fetch-edge.md" title="FETCH EDGE" class="md-nav__link">
       FETCH EDGE
     </a>
   </li>
@@ -1855,7 +1806,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/" title="Index overview" class="md-nav__link">
+    <a href="../../14.native-index-statements/README.md" title="Index overview" class="md-nav__link">
       Index overview
     </a>
   </li>
@@ -1867,7 +1818,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/1.create-native-index/" title="CREATE INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/1.create-native-index.md" title="CREATE INDEX" class="md-nav__link">
       CREATE INDEX
     </a>
   </li>
@@ -1879,7 +1830,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/2.show-native-indexes/" title="SHOW INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/2.show-native-indexes.md" title="SHOW INDEX" class="md-nav__link">
       SHOW INDEX
     </a>
   </li>
@@ -1903,7 +1854,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/3.describe-native-index/" title="DESCRIBE INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/3.describe-native-index.md" title="DESCRIBE INDEX" class="md-nav__link">
       DESCRIBE INDEX
     </a>
   </li>
@@ -1915,7 +1866,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/4.rebuild-native-index/" title="REBUILD INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/4.rebuild-native-index.md" title="REBUILD INDEX" class="md-nav__link">
       REBUILD INDEX
     </a>
   </li>
@@ -1927,7 +1878,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/5.show-native-index-status/" title="SHOW INDEX STATUS" class="md-nav__link">
+    <a href="../../14.native-index-statements/5.show-native-index-status.md" title="SHOW INDEX STATUS" class="md-nav__link">
       SHOW INDEX STATUS
     </a>
   </li>
@@ -1939,7 +1890,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/6.drop-native-index/" title="DROP INDEX" class="md-nav__link">
+    <a href="../../14.native-index-statements/6.drop-native-index.md" title="DROP INDEX" class="md-nav__link">
       DROP INDEX
     </a>
   </li>
@@ -1975,7 +1926,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14.native-index-statements/" title="Index overview" class="md-nav__link">
+    <a href="../../14.native-index-statements/README.md" title="Index overview" class="md-nav__link">
       Index overview
     </a>
   </li>
@@ -1987,7 +1938,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/1.text-based-index-restrictions/" title="Full-text restrictions" class="md-nav__link">
+    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/1.text-based-index-restrictions.md" title="Full-text restrictions" class="md-nav__link">
       Full-text restrictions
     </a>
   </li>
@@ -1999,7 +1950,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/2.deploy-es/" title="Deploy Elasticsearch cluster" class="md-nav__link">
+    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/2.deploy-es.md" title="Deploy Elasticsearch cluster" class="md-nav__link">
       Deploy Elasticsearch cluster
     </a>
   </li>
@@ -2011,7 +1962,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/3.deploy-listener/" title="Deploy Raft Listener cluster" class="md-nav__link">
+    <a href="../../../4.deployment-and-installation/6.deploy-text-based-index/3.deploy-listener.md" title="Deploy Raft Listener cluster" class="md-nav__link">
       Deploy Raft Listener cluster
     </a>
   </li>
@@ -2023,7 +1974,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../15.full-text-index-statements/1.search-with-text-based-index/" title="Search with full-text index" class="md-nav__link">
+    <a href="../../15.full-text-index-statements/1.search-with-text-based-index.md" title="Search with full-text index" class="md-nav__link">
       Search with full-text index
     </a>
   </li>
@@ -2059,7 +2010,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../16.subgraph-and-path/1.get-subgraph/" title="GET SUBGRAPH" class="md-nav__link">
+    <a href="../../16.subgraph-and-path/1.get-subgraph.md" title="GET SUBGRAPH" class="md-nav__link">
       GET SUBGRAPH
     </a>
   </li>
@@ -2071,7 +2022,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../16.subgraph-and-path/2.find-path/" title="FIND PATH" class="md-nav__link">
+    <a href="../../16.subgraph-and-path/2.find-path.md" title="FIND PATH" class="md-nav__link">
       FIND PATH
     </a>
   </li>
@@ -2107,7 +2058,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../17.query-tuning-statements/1.explain-and-profile/" title="EXPLAIN and PROFILE" class="md-nav__link">
+    <a href="../../17.query-tuning-statements/1.explain-and-profile.md" title="EXPLAIN and PROFILE" class="md-nav__link">
       EXPLAIN and PROFILE
     </a>
   </li>
@@ -2143,7 +2094,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../18.operation-and-maintenance-statements/4.job-statements/" title="Job statements" class="md-nav__link">
+    <a href="../../18.operation-and-maintenance-statements/4.job-statements.md" title="Job statements" class="md-nav__link">
       Job statements
     </a>
   </li>
@@ -2647,7 +2598,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../7.data-security/2.backup-restore/2.compile-br/" title="Compile BR" class="md-nav__link">
+    <a href="../../../7.data-security/2.backup-restore/2.compile-br.md" title="Compile BR" class="md-nav__link">
       Compile BR
     </a>
   </li>
@@ -2762,7 +2713,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/about-exchange/ex-ug-what-is-exchange/" title="What is Nebula Exchange" class="md-nav__link">
+    <a href="../../../nebula-exchange/about-exchange/ex-ug-what-is-exchange.md" title="What is Nebula Exchange" class="md-nav__link">
       What is Nebula Exchange
     </a>
   </li>
@@ -2774,7 +2725,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/about-exchange/ex-ug-limitations/" title="Limitations" class="md-nav__link">
+    <a href="../../../nebula-exchange/about-exchange/ex-ug-limitations.md" title="Limitations" class="md-nav__link">
       Limitations
     </a>
   </li>
@@ -2786,7 +2737,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/about-exchange/ex-ug-terms/" title="Glossary" class="md-nav__link">
+    <a href="../../../nebula-exchange/about-exchange/ex-ug-terms.md" title="Glossary" class="md-nav__link">
       Glossary
     </a>
   </li>
@@ -2798,7 +2749,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/about-exchange/ex-ug-faq/" title="FAQ" class="md-nav__link">
+    <a href="../../../nebula-exchange/about-exchange/ex-ug-faq.md" title="FAQ" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -2815,7 +2766,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/ex-ug-compile/" title="Compile Exchange" class="md-nav__link">
+    <a href="../../../nebula-exchange/ex-ug-compile.md" title="Compile Exchange" class="md-nav__link">
       Compile Exchange
     </a>
   </li>
@@ -2846,7 +2797,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-steps/" title="Use Exchange" class="md-nav__link">
+    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-steps.md" title="Use Exchange" class="md-nav__link">
       Use Exchange
     </a>
   </li>
@@ -2858,7 +2809,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-from-csv/" title="Import data from CSV files" class="md-nav__link">
+    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-from-csv.md" title="Import data from CSV files" class="md-nav__link">
       Import data from CSV files
     </a>
   </li>
@@ -2870,7 +2821,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-json/" title="Import data from JSON files" class="md-nav__link">
+    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-json.md" title="Import data from JSON files" class="md-nav__link">
       Import data from JSON files
     </a>
   </li>
@@ -2882,7 +2833,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-hive/" title="Import data from HIVE" class="md-nav__link">
+    <a href="../../../nebula-exchange/use-exchange/ex-ug-import-hive.md" title="Import data from HIVE" class="md-nav__link">
       Import data from HIVE
     </a>
   </li>
@@ -2918,7 +2869,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/parameter-reference/ex-ug-paras-spark/" title="Spark related parameters" class="md-nav__link">
+    <a href="../../../nebula-exchange/parameter-reference/ex-ug-paras-spark.md" title="Spark related parameters" class="md-nav__link">
       Spark related parameters
     </a>
   </li>
@@ -2930,7 +2881,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/parameter-reference/ex-ug-paras-nebulagraph/" title="Nebula Graph related parameters" class="md-nav__link">
+    <a href="../../../nebula-exchange/parameter-reference/ex-ug-paras-nebulagraph.md" title="Nebula Graph related parameters" class="md-nav__link">
       Nebula Graph related parameters
     </a>
   </li>
@@ -2942,7 +2893,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-exchange/parameter-reference/ex-ug-para-import-command/" title="Import command parameters" class="md-nav__link">
+    <a href="../../../nebula-exchange/parameter-reference/ex-ug-para-import-command.md" title="Import command parameters" class="md-nav__link">
       Import command parameters
     </a>
   </li>
@@ -3007,7 +2958,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/about-studio/st-ug-what-is-graph-studio/" title="What is Studio" class="md-nav__link">
+    <a href="../../../nebula-studio/about-studio/st-ug-what-is-graph-studio.md" title="What is Studio" class="md-nav__link">
       What is Studio
     </a>
   </li>
@@ -3019,7 +2970,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/about-studio/st-ug-limitations/" title="Limitations" class="md-nav__link">
+    <a href="../../../nebula-studio/about-studio/st-ug-limitations.md" title="Limitations" class="md-nav__link">
       Limitations
     </a>
   </li>
@@ -3031,7 +2982,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/about-studio/st-ug-check-updates/" title="Check updates" class="md-nav__link">
+    <a href="../../../nebula-studio/about-studio/st-ug-check-updates.md" title="Check updates" class="md-nav__link">
       Check updates
     </a>
   </li>
@@ -3067,7 +3018,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/install-configure/st-ug-deploy/" title="Deploy Studio" class="md-nav__link">
+    <a href="../../../nebula-studio/install-configure/st-ug-deploy.md" title="Deploy Studio" class="md-nav__link">
       Deploy Studio
     </a>
   </li>
@@ -3079,7 +3030,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/install-configure/st-ug-connect/" title="Connect to Nebula Graph" class="md-nav__link">
+    <a href="../../../nebula-studio/install-configure/st-ug-connect.md" title="Connect to Nebula Graph" class="md-nav__link">
       Connect to Nebula Graph
     </a>
   </li>
@@ -3115,7 +3066,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-plan-schema/" title="Design a schema" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-plan-schema.md" title="Design a schema" class="md-nav__link">
       Design a schema
     </a>
   </li>
@@ -3127,7 +3078,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-prepare-csv/" title="Prepare CSV files" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-prepare-csv.md" title="Prepare CSV files" class="md-nav__link">
       Prepare CSV files
     </a>
   </li>
@@ -3139,7 +3090,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-create-schema/" title="Create a schema" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-create-schema.md" title="Create a schema" class="md-nav__link">
       Create a schema
     </a>
   </li>
@@ -3151,7 +3102,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-import-data/" title="Import data" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-import-data.md" title="Import data" class="md-nav__link">
       Import data
     </a>
   </li>
@@ -3163,7 +3114,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/quick-start/st-ug-explore/" title="Query graph data" class="md-nav__link">
+    <a href="../../../nebula-studio/quick-start/st-ug-explore.md" title="Query graph data" class="md-nav__link">
       Query graph data
     </a>
   </li>
@@ -3218,7 +3169,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/use-console/st-ug-open-in-explore/" title="Open in Explore" class="md-nav__link">
+    <a href="../../../nebula-studio/use-console/st-ug-open-in-explore.md" title="Open in Explore" class="md-nav__link">
       Open in Explore
     </a>
   </li>
@@ -3230,7 +3181,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../nebula-studio/use-console/st-ug-visualize-subgraph/" title="View subgraphs" class="md-nav__link">
+    <a href="../../../nebula-studio/use-console/st-ug-visualize-subgraph.md" title="View subgraphs" class="md-nav__link">
       View subgraphs
     </a>
   </li>
@@ -3268,19 +3219,33 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#edge_type_name" class="md-nav__link">
-    Edge type name
+  <a href="#_2" class="md-nav__link">
+    以性能为目标进行建模
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#_3" class="md-nav__link">
+    合理设置边属性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    合理设置标签属性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    正确使用索引
   </a>
   
 </li>
@@ -3302,29 +3267,27 @@
               
                 
                 
-                <h1 id="drop_edge">DROP EDGE<a class="headerlink" href="#drop_edge" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code>DROP EDGE [IF EXISTS] &lt;edge_type_name&gt;
-</code></pre></div>
-<p><code>DROP EDGE</code> drops an edge type with the given name in a graph space. You must have the <code>DROP</code> <a href="../../../7.data-security/1.authentication/3.role-list/">privilege</a> for the graph space. To drop an edge type in a specific graph space, you must use the graph space first.</p>
+                <h1 id="_1">图建模<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>本文介绍在Nebula Graph项目中成功应用的一些图建模通用建议。</p>
 <blockquote>
-<p>Before you drop an edge type, make sure that the edge type does not contain any indexes or TTLs. If an edge type contains any indexes or TTLs, a conflict error occurs (<code>[ERROR (-8)]: Conflict!</code>) when you drop it. See <a href="../../14.native-index-statements/6.drop-native-index/">drop index</a>.</p>
+<p><strong>说明</strong>：本文建议是通用的，在特定领域有例外，请结合实际业务情况进行图建模。</p>
 </blockquote>
-<p>An edge can have only one edge type. After you drop it, the edge <strong>CANNOT</strong> be accessible. The edge is deleted in the next compaction.</p>
-<h2 id="edge_type_name">Edge type name<a class="headerlink" href="#edge_type_name" title="Permanent link">&para;</a></h2>
+<h2 id="_2">以性能为目标进行建模<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>目前Nebula Graph没有完美的建模方法，如何建模取决于您想从数据中挖掘的内容。分析数据并根据业务模型创建方便直观的数据模型，测试模型并优化，逐渐适应业务。为了更好的性能，您可以多次更改或重新设计模型。</p>
+<h2 id="_3">合理设置边属性<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>IF EXISTS</code>: Dropping a non-existent edge type causes an error. You can use the <code>IF EXISTS</code> option to conditionally drop the edge type and avoid the error.<blockquote>
-<p><strong>NOTE</strong>: The edge type existence detection here compares only the edge type names (excluding properties).</p>
-</blockquote>
-</li>
+<li>深度图遍历的性能较低，为了减少遍历深度，请使用点属性代替边。例如，模型a包括姓名、年龄、眼睛颜色三种属性，建议您创建一个标签<code>person</code>，然后为它添加姓名、年龄、眼睛颜色的属性。如果创建一个包含眼睛颜色的标签和一个边类型<code>has</code>，然后创建一个边用来表示人拥有的眼睛颜色，这种建模方法会降低遍历性能。</li>
 </ul>
 <ul>
-<li><code>edge_type_name</code>: Specifies the edge type name that you want to drop. You can drop only one edge type in one statement.</li>
+<li>为边创建属性时请勿使用长字符串，Nebula Graph支持在边上存储长字符串属性，但是这些属性会同时保存在出边和入边，请小心写入放大（write amplification）。</li>
 </ul>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>nebula&gt; CREATE EDGE e1(p1 string, p2 int);
-
-nebula&gt; DROP EDGE e1;
-</code></pre></div>
+<h2 id="_4">合理设置标签属性<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>在图建模中，请将一组类似的平级属性放入同一个标签，即按不同概念进行分组。</p>
+<h2 id="_5">正确使用索引<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>正确使用索引可以加速查询，但是索引会导致写性能下降90%甚至更多，只有在根据点或边的属性定位点或边时才使用索引。</p>
+<blockquote>
+<p><strong>注意</strong>：请<strong>不要随意</strong>在生产环境中使用索引，除非您很清楚使用索引对业务的影响。</p>
+</blockquote>
                 
                   
                 
@@ -3342,41 +3305,6 @@ nebula&gt; DROP EDGE e1;
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../1.create-edge/" title="CREATE EDGE" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                CREATE EDGE
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../3.alter-edge/" title="ALTER EDGE" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                ALTER EDGE
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3417,6 +3345,23 @@ nebula&gt; DROP EDGE e1;
     </div>
     
       <script src="../../../assets/javascripts/application.c33a9706.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.ja.js"></script>
+              
+            
+          
+          
+        
       
       <script>app.initialize({version:"1.1.2",url:{base:"../../.."}})</script>
       
