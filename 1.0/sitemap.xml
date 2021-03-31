@@ -332,99 +332,79 @@
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/about-exchange/ex-ug-what-is-exchange/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/4.deployment-and-installation/1.resource-preparations/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/about-exchange/ex-ug-limitations/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/4.deployment-and-installation/2.compile-and-install-nebula-graph/1.install-nebula-graph-by-compiling-the-source-code/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/about-exchange/ex-ug-terms/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/4.deployment-and-installation/2.compile-and-install-nebula-graph/2.install-nebula-graph-by-rpm-or-deb/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/about-exchange/ex-ug-faq/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/4.deployment-and-installation/deploy-nebula-graph-cluster/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/ex-ug-compile/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/4.deployment-and-installation/3.upgrade-nebula-graph/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/use-exchange/ex-ug-import-steps/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/5.configurations-and-logs/1.configurations/1.configurations/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/use-exchange/ex-ug-import-from-csv/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/5.configurations-and-logs/1.configurations/2.meta-config/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/use-exchange/ex-ug-import-json/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/5.configurations-and-logs/1.configurations/3.graph-config/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/use-exchange/ex-ug-import-hive/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/5.configurations-and-logs/1.configurations/4.storage-config/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/parameter-reference/ex-ug-paras-spark/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/5.configurations-and-logs/1.configurations/6.kernel-config/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/parameter-reference/ex-ug-paras-nebulagraph/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/5.configurations-and-logs/2.log-management/logs/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-exchange/parameter-reference/ex-ug-para-import-command/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/6.monitor-and-metrics/1.query-performance-metrics/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/about-studio/st-ug-what-is-graph-studio/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/7.data-security/1.authentication/1.authentication/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/about-studio/st-ug-limitations/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/7.data-security/1.authentication/2.management-user/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/about-studio/st-ug-check-updates/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/7.data-security/1.authentication/3.role-list/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/install-configure/st-ug-deploy/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/7.data-security/2.backup-restore/1.what-is-br/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/install-configure/st-ug-connect/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/7.data-security/2.backup-restore/3.br-backup-data/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/quick-start/st-ug-plan-schema/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/7.data-security/2.backup-restore/4.br-restore-data/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/quick-start/st-ug-prepare-csv/</loc>
-     <lastmod>2021-03-31</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/quick-start/st-ug-create-schema/</loc>
-     <lastmod>2021-03-31</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/quick-start/st-ug-import-data/</loc>
-     <lastmod>2021-03-31</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/quick-start/st-ug-explore/</loc>
-     <lastmod>2021-03-31</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/use-console/st-ug-open-in-explore/</loc>
-     <lastmod>2021-03-31</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.nebula-graph.io/1.0/nebula-studio/use-console/st-ug-visualize-subgraph/</loc>
+     <loc>https://docs.nebula-graph.io/1.0/7.data-security/3.manage-snapshot/</loc>
      <lastmod>2021-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
